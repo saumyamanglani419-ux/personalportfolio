@@ -67,7 +67,7 @@ export const Hero = () => {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
-              src={soumyaImage}
+              src="/SaumyaM.webp"
               alt="Creative Portrait"
               className="h-full w-[90%] object-cover brightness-90 hover:grayscale-0 transition-[filter] duration-1000"
               referrerPolicy="no-referrer"
