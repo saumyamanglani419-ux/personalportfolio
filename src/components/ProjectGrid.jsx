@@ -6,28 +6,28 @@ const projects = [
     id: 1,
     title: "Coffee App UI",
     category: "Figma Design",
-    image: "../src/assets/coffeeui.webp",
+    image: "/coffeeui.webp",
     size: "medium"
   },
   {
     id: 2,
     title: "Dashboard Design",
     category: "Gravity Coding Website",
-    image: "../src/assets/Dashboard.webp",
+    image: "/Dashboard.webp",
     size: "small"
   },
   {
     id: 3,
     title: "Game Web UI",
     category: "Landing Page Design",
-    image: "../src/assets/game ui.webp",
+    image: "/game ui.webp",
     size: "small"
   },
   {
     id: 4,
     title: "Portfolio Interface",
     category: "Web Design",
-    image: "../src/assets/portfolio ui.webp",
+    image: "/portfolio ui.webp",
     size: "large"
   }
 ];
