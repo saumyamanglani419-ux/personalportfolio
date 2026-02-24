@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { FadeIn } from './FadeIn';
-import soumyaImage from '../assets/SaumyaM.webp'; 
 
 
 export const Hero = () => {

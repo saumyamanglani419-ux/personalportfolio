@@ -40,7 +40,7 @@ export const Footer = () => {
                 <span className="text-[10px] uppercase tracking-[0.4em] text-muted font-bold">Social</span>
                 <div className="flex flex-col gap-4 text-xl font-light">
                   {['Instagram', 'Twitter', 'LinkedIn', 'Dribbble'].map((social) => (
-                    <a key={social} href="#" className="hover:text-muted transition-colors w-fit relative group">
+                    <a key={social} href="https://www.instagram.com/ui_uxofficial_saumya?igsh=MXhicDZodDlub3lsMg%3D%3D&utm_source=qr" className="hover:text-muted transition-colors w-fit relative group">
                       {social}
                       <span className="absolute -bottom-1 left-0 w-0 h-px bg-muted transition-all duration-300 group-hover:w-full" />
                     </a>
