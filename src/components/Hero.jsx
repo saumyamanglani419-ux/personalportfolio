@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { FadeIn } from './FadeIn';
+import soumyaImage from '../assets/SaumyaM.webp'; 
+
 
 export const Hero = () => {
   const container = {
@@ -65,7 +67,7 @@ export const Hero = () => {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
-              src="../src/assets/SaumyaM.webp"
+              src={soumyaImage}
               alt="Creative Portrait"
               className="h-full w-[90%] object-cover brightness-90 hover:grayscale-0 transition-[filter] duration-1000"
               referrerPolicy="no-referrer"
