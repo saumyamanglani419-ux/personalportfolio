@@ -20,7 +20,7 @@ const projects = [
     id: 3,
     title: "Game Web UI",
     category: "Landing Page Design",
-    image: "/game ui.webp",
+    image: "/game ui.jpg",
     size: "small"
   },
   {
