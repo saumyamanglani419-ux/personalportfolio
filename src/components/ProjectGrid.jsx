@@ -27,7 +27,7 @@ const projects = [
     id: 4,
     title: "Portfolio Interface",
     category: "Web Design",
-    image: "/portfolio ui.webp",
+    image: "/portfolio ui.jpg",
     size: "large"
   }
 ];
