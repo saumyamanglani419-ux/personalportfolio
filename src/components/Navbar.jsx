@@ -1,7 +1,9 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
@@ -19,8 +21,8 @@ export const Navbar = () => {
         </a>
       </motion.div>
 
-      {/* Nav Links */}
-      <div className="flex items-center gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-600">
+      {/* Desktop Nav */}
+      <div className="hidden md:flex items-center gap-8 text-xs md:text-sm font-medium uppercase tracking-widest text-gray-600">
         {["Work", "About", "Contact"].map((item) => (
           <motion.a
             key={item}
@@ -33,7 +35,6 @@ export const Navbar = () => {
           </motion.a>
         ))}
 
-        {/* Resume Button (Opens in New Tab) */}
         <motion.a
           href="/Saumya_Manglani_Resume.pdf"
           target="_blank"
@@ -44,12 +45,47 @@ export const Navbar = () => {
           View Resume
         </motion.a>
       </div>
+
+      {/* Hamburger Button */}
+      <div className="md:hidden">
+        <button onClick={() => setIsOpen(!isOpen)} className="flex flex-col gap-1">
+          <span className="w-6 h-0.5 bg-black"></span>
+          <span className="w-6 h-0.5 bg-black"></span>
+          <span className="w-6 h-0.5 bg-black"></span>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md px-6 py-6 flex flex-col gap-6 text-sm font-medium uppercase tracking-widest text-gray-700 md:hidden shadow-lg"
+          >
+            {["Work", "About", "Contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => setIsOpen(false)}
+                className="border-b pb-2"
+              >
+                {item}
+              </a>
+            ))}
+
+            <a
+              href="/Saumya_Manglani_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 px-4 py-2 border border-rose-400 text-rose-400 rounded-md text-center"
+            >
+              View Resume
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };
-
-
-
-
-
-
