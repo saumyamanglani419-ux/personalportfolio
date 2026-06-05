@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "Coffee App UI",
-    category: "Figma Design",
+    category: "Mobile Application",
     image: "/coffeeui.webp",
     size: "medium",
     link: "https://www.figma.com/design/q12CoZH1HeEP8oSZKvcwIi/Untitled?node-id=0-1&t=lQF5BsAHP4xxfWjQ-1"
@@ -13,18 +13,18 @@ const projects = [
   {
     id: 2,
     title: "Dashboard Design",
-    category: "Gravity Coding Website",
+    category: "Dual Mode Design",
     image: "/Dashboard.webp",
     size: "small",
     link: "https://www.figma.com/design/MaznUuTwfOnUBMCnldfWRq/Untitled?node-id=0-1&t=t2IyZPpVfrcN5plF-1"
   },
-  {
+   {
     id: 3,
-    title: "Game Web UI",
-    category: "Landing Page Design",
-    image: "/game ui.jpg",
+    title: "Aura – AI-Powered Skincare",
+    category: "Mobile Application",
+    image: "/home.png",
     size: "small",
-    link: "https://www.figma.com/design/zIKQMGcLXmvO1yuY4uzmjZ/Untitled?node-id=76-2&t=hVjHF7IL73OMHzsn-1"
+    link: "https://www.figma.com/design/zIKQMGcLXmvO1yuY4uzmjZ/Untitled?node-id=189-2&t=hVjHF7IL73OMHzsn-1"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const projects = [
     image: "/portfolio ui.jpg",
     size: "large",
     link: "https://www.figma.com/design/zIKQMGcLXmvO1yuY4uzmjZ/Untitled?node-id=189-2&t=hVjHF7IL73OMHzsn-1"
-  }
+  }, 
 ];
 
 export const ProjectGrid = () => {
