@@ -34,10 +34,10 @@ export const About = () => {
         
         <div className="mt-32 grid grid-cols-2 lg:grid-cols-4 gap-12 border-t border-white/10 pt-16">
           {[
-            { label: "Experience", value: "06 Months" },
-            { label: "Global Projects", value: "20+" },
-            { label: "Design Awards", value: "02" },
-            { label: "Happy Clients", value: "05+" }
+            { label: "Experience", value: "01 Year" },
+            { label: "Global Projects", value: "40+" },
+            { label: "Design Awards", value: "05" },
+            { label: "Happy Clients", value: "15+" }
           ].map((stat, i) => (
             <FadeIn key={i} delay={0.6 + (i * 0.1)} direction="up">
               <div className="group cursor-default">
