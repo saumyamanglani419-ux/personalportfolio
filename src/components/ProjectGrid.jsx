@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React from "react";
+import { motion } from "motion/react";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     image: "/fintrack.jpg",
     size: "medium",
     featured: true,
-    link: "https://www.figma.com/design/3njLTece96VUIfPaEGqRWb/Untitled?node-id=8-894&t=OYmimISsYw1qCUHx-1"
+    link: "https://www.figma.com/design/3njLTece96VUIfPaEGqRWb/Untitled?node-id=8-894&t=OYmimISsYw1qCUHx-1",
   },
 
   {
@@ -23,7 +23,7 @@ const projects = [
     image: "/aura.png",
     size: "small",
     featured: true,
-    link: "https://www.figma.com/design/fe4l1J60iBgAZekwn7NEBz/prototype?node-id=0-1&t=BwniJk48BhyW6Pii-1"
+    link: "https://www.figma.com/design/fe4l1J60iBgAZekwn7NEBz/prototype?node-id=0-1&t=BwniJk48BhyW6Pii-1",
   },
 
   {
@@ -35,7 +35,7 @@ const projects = [
     image: "/skinFlirts.png",
     size: "large",
     featured: false,
-    link: "https://www.figma.com/design/sn6V5QZGnc5OYNuLo1qSF8/Untitled?node-id=0-1&t=8ziNksIunl6FlKX8-1"
+    link: "https://www.figma.com/design/sn6V5QZGnc5OYNuLo1qSF8/Untitled?node-id=0-1&t=8ziNksIunl6FlKX8-1",
   },
 
   {
@@ -47,7 +47,7 @@ const projects = [
     image: "/Ecommerce.png",
     size: "large",
     featured: false,
-    link: "https://www.figma.com/design/a7PjuyzeVHAZix6jYsLgDQ/Untitled?node-id=0-1&t=gWTBA6tvetfcvLgC-1"
+    link: "https://www.figma.com/design/a7PjuyzeVHAZix6jYsLgDQ/Untitled?node-id=0-1&t=gWTBA6tvetfcvLgC-1",
   },
 
   {
@@ -59,7 +59,7 @@ const projects = [
     image: "/dashboard.png",
     size: "small",
     featured: false,
-    link: "https://www.figma.com/design/MaznUuTwfOnUBMCnldfWRq/Untitled?node-id=0-1&t=yQnPRVLhP96LKZBO-1"
+    link: "https://www.figma.com/design/MaznUuTwfOnUBMCnldfWRq/Untitled?node-id=0-1&t=yQnPRVLhP96LKZBO-1",
   },
 
   {
@@ -71,8 +71,8 @@ const projects = [
     image: "/cappuccino.png",
     size: "small",
     featured: false,
-    link: "https://www.figma.com/design/zNk8ZVrhsOuj4YsbaxHA2d/cappuccino?node-id=0-1&t=KLqmzbVSqmMQf8rj-1"
-  }
+    link: "https://www.figma.com/design/zNk8ZVrhsOuj4YsbaxHA2d/cappuccino?node-id=0-1&t=KLqmzbVSqmMQf8rj-1",
+  },
 ];
 
 export const ProjectGrid = () => {
@@ -106,7 +106,7 @@ export const ProjectGrid = () => {
               transition={{
                 duration: 1,
                 delay: index * 0.12,
-                ease: [0.22, 1, 0.36, 1]
+                ease: [0.22, 1, 0.36, 1],
               }}
               className={`group cursor-pointer ${
                 project.size === "large" ? "md:row-span-2" : ""
@@ -130,7 +130,7 @@ export const ProjectGrid = () => {
                   whileHover={{ scale: 1.03 }}
                   transition={{
                     duration: 0.8,
-                    ease: [0.22, 1, 0.36, 1]
+                    ease: [0.22, 1, 0.36, 1],
                   }}
                   src={project.image}
                   alt={project.title}
