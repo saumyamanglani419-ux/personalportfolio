@@ -52,7 +52,7 @@ export const Navbar = () => {
           {/* RIGHT SIDE */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="/Saumya_Manglani_Resume.pdf"
+              href="/ui ux.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 bg-black  hover:bg-rose-300 hover:text-black text-white rounded-full text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-all duration-300"
