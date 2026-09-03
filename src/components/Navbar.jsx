@@ -130,7 +130,7 @@ export const Navbar = () => {
               ))}
 
               <motion.a
-                href="/Saumya_Manglani_Resume.pdf"
+                href="/ui ux.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 30 }}
